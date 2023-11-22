@@ -4,6 +4,7 @@ function jajanBoba(uang: number, callback: (uang: number) => void): void {
   if (uang < hargaBoba) {
     console.log("Maaf uang kamu belum cukup untuk membeli boba");
     console.log("sisa uang kamu sebesar ", uang);
+    callback(uang);
   } else {
     let sisaUang: number = uang - hargaBoba;
     setTimeout(() => {
@@ -30,4 +31,4 @@ function jajanSeblak(uang: number): void {
 }
 
 // jajanBoba(20000, jajanSeblak);
-// jajanBoba(10000, jajanSeblak);
+jajanBoba(10000, jajanSeblak);
