@@ -26,7 +26,7 @@ function jajanSeblak(uang: number): void {
     setTimeout(() => {
       console.log("Kamu jajan seblak denga harga Rp", hargaSeblak);
       console.log("sisa uang kamu ", sisaUang);
-    }, 4000);
+    }, 9000);
   }
 }
 
